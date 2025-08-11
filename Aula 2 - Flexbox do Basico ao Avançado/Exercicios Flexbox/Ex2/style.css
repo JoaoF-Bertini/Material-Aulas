@@ -5,6 +5,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  height: 400px;
+
   
   & li {
     background-color: #4d7298;
@@ -15,3 +18,13 @@ ul {
   }
 }
 
+ul li > *{
+  flex: 1; /*Isso é o mesmo que colocar esses 3 juntos*/
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0; */
+}
+
+ul li:last-child{
+  align-self: flex-end;
+}
